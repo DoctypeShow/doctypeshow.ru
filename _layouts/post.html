@@ -11,6 +11,9 @@ layout: default
 </div>
 
 <article class="post-content">
+    {% if page.cover %}
+    <img src="{{site.url}}/{{ page.cover }}" alt="{{ page.title }}"/>
+    {% endif %}
   {{ content }}
 </article>
 
