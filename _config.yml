@@ -1,7 +1,7 @@
 # Site settings
 title:       "DOCTYPE show"
 email:       your_email@example.com
-author:      John Otander
+author:      gorenburg & bizi
 description: "Подкаст о полном цикле веб-разработки"
 baseurl:     ""
 url:         "http://doctypeshow.ru"
