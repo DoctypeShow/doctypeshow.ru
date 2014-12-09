@@ -7,7 +7,7 @@ baseurl:     ""
 url:         "http://doctypeshow.ru"
 
 # Google analytics
-google_analytics:
+google_analytics: UA-57495469-1
 
 # Optional features
 animated:           false
