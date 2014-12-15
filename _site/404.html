@@ -14,8 +14,11 @@
     <link rel="stylesheet" href="/css/pixyll.css" type="text/css">
     <link rel="stylesheet" href="/css/thank.css"/>
     <!-- Fonts -->
-    <link href='//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|Roboto:400,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|Roboto:400,700,900|PT+Mono:400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     
+
+    <!-- Favicon -->
+    <link href="/images/favicon.png" rel="shortcut icon">
 
     <!-- Open Graph -->
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
@@ -33,7 +36,7 @@
     <div class="mt2 wrap">
         <div class="measure">
             <div class="clearfix">
-                <a href="http://doctypeshow.ru" class="site-title">&lt;!DOCTYPE show&gt;</a>
+                <a href="/" class="site-title">&lt;!DOCTYPE show&gt;</a>
                 <nav class="site-nav right">
                     <!--<a href="/about/">About</a>-->
 
@@ -81,5 +84,32 @@
     ga('create', 'UA-57513610-1', 'auto');
     ga('send', 'pageview');
 </script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter27431522 = new Ya.Metrika({id:27431522,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/27431522" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 </body>
 </html>
