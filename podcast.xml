@@ -1,0 +1,56 @@
+---
+layout: nil
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+
+  <channel>
+
+    <title>DoctypeShow</title>
+    <link>http://doctypeshow.ru/</link>
+    <language>ru</language>
+    
+    <image>
+      <url>http://doctypeshow.ru/images/cover.png</url>
+      <title>DoctypeShow</title>
+      <link>http://doctypeshow.ru</link>
+    </image>
+
+    <itunes:subtitle>Подкаст о полном цикле веб-разработки</itunes:subtitle>
+    <itunes:author>Александр Бизиков и Илья Горенбург</itunes:author>
+    <itunes:summary>Подкаст о полном цикле веб-разработки</itunes:summary>
+    <description>Подкаст о полном цикле веб-разработки</description>
+
+    <itunes:owner>
+      <itunes:name>DoctypeShow</itunes:name>
+      <itunes:email>info@doctypeshow.ru</itunes:email>
+    </itunes:owner>
+
+    <itunes:image href="http://doctypeshow.ru/images/cover.png" />
+    <itunes:category text="Technology" />
+    <itunes:new-feed-url>http://doctypeshow.ru/podcast.xml</itunes:new-feed-url>
+    <itunes:explicit>No</itunes:explicit>
+
+    {% for post in site.posts %}
+     
+      <item>
+
+        <title>{{ post.title }}</title>
+        <itunes:author>Александр Бизиков и Илья Горенбург</itunes:author>
+        <itunes:subtitle>DoctypeShow: {{ post.title }}</itunes:subtitle>
+        <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
+        <itunes:image href="http://doctypeshow.ru/images/cover.png" />
+        <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/x-m4a" />
+        <guid>{{ post.url }}</guid>
+        <link>{{ post.url }}</link>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} GMT</pubDate>
+        <itunes:duration>{{ post.duration }}</itunes:duration>
+
+      </item>
+
+    {% endfor %}
+
+  </channel>
+
+</rss>
